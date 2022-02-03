@@ -1,0 +1,101 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .child-container {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-container .child-container:hover .frame1-text .text1 {
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+}
+
+.main-container .child-container:hover .frame1-text .text2 {
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+}
+
+.main-container .child-container:hover img {
+  -webkit-filter: brightness(25%) blur(3px);
+          filter: brightness(25%) blur(3px);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main-container .child-container img {
+  height: 100%;
+  position: absolute;
+}
+
+.main-container .child-container .frame1-text {
+  position: absolute;
+  z-index: 20;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.main-container .child-container .frame1-text .text1 {
+  font-size: 6.2vh;
+  font-family: 'Montserrat';
+  color: white;
+  margin-bottom: 10vh;
+  margin-left: 10vh;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-top: 78vh;
+  position: absolute;
+  width: 100%;
+}
+
+.main-container .child-container .frame1-text .text2 {
+  font-size: 4vh;
+  font-family: 'Montserrat';
+  color: white;
+  margin-bottom: 1vh;
+  margin-left: 13vh;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  margin-top: 85vh;
+  -webkit-filter: opacity(1%);
+          filter: opacity(1%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.main-container .child-container .frame1-text .text2 .subtittle {
+  font-size: 2vh;
+}
+
+.main-container .child-container .frame1-text .text2 .subtittle2 {
+  margin-left: 1vh;
+}
+/*# sourceMappingURL=styles.css.map */
