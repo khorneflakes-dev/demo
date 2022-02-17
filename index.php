@@ -5,69 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELITE</title>
+    <title>elite</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-container">
-
-        <div class="child-container">
-            <div class="frame1-text">
-                <div class="text1">
-                    <p >MODELOS</p>
+    <div class="navbar">
+        <div class="navbar-options">
+            <div class="main-logo">
+                <a href="#">
+                    <img src="./images/lvia-logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="navbar-options">
+            <div class="socials">
+                <div class="socials-logo">
+                    <a href="#">
+                        <img src="./images/fb-logo.svg" alt="">
+                    </a>
                 </div>
-                <div class="text2">
-                    <p>FEMENINOS</p>
-                    <p>MASCULINOS</p>
-                    <p>INFLUENCERS</p>
+                <div class="socials-logo">
+                    <a href="#">
+                        <img src="./images/instagram-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="socials-logo">
+                    <a href="#">
+                        <img src="./images/linkedin-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="socials-logo">
+                    <a href="#">
+                        <img src="./images/gmail-logo.svg" alt="">
+                    </a>
                 </div>
             </div>
-            <img src="./image/woman7.jpg">
         </div>
-
-        <div class="child-container">
-            <div class="frame1-text">
-                <div class="text1">
-                    <p >SERVICIOS</p>
-                </div>
-                <div class="text2">
-                    <p class="subtittle">conoce mas sobre</p>
-                    <p class="subtittle2">NOSOTROS</p>
-                </div>
-            </div>
-
-            <img src="./image/woman3.jpg">
+        <div class="navbar-options">
+            <a href="#">MODELOS</a>
         </div>
-
-        <div class="child-container">
-            <div class="frame1-text">
-                <div class="text1">
-                    <p >POSTULATE</p>
-                </div>
-                <div class="text2">
-                    <p class="subtittle">soy:</p>
-                    <p class="subtittle2">MODELO</p>
-                    <p class="subtittle">soy:</p>
-                    <p class="subtittle2">INFLUENCER</p>
-                    
-                </div>
-            </div>
-            <img src="./image/woman6.jpg">
+        <div class="navbar-options">
+            <a href="#">INFLUENCERS</a>
         </div>
-
+        <div class="navbar-options">
+            <a href="#">SERVICIOS</a>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="bg-img">
+            <img src="./images/bgimage.jpg" alt="">
+        </div>
+        <div class="description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra cursus augue maecenas
+            </p>
+        </div>
+    </div>
+
+    <div class="frame2">
+        beneficios modelos
+    </div>
+
 </body>
 
 </html>
