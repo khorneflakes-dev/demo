@@ -1,101 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap");
 * {
   margin: 0 auto;
-  padding: 0;
-  background-color: black;
 }
 
-.main-container {
+body {
+  background-color: #292929;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 110;
+  width: 101vw;
+  height: 9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff6b;
 }
 
-.main-container .child-container {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.main-container .child-container:hover .frame1-text .text1 {
-  -webkit-transform: translateY(-10vh);
-          transform: translateY(-10vh);
-}
-
-.main-container .child-container:hover .frame1-text .text2 {
-  -webkit-filter: opacity(100%);
-          filter: opacity(100%);
-  -webkit-transform: translateY(-10vh);
-          transform: translateY(-10vh);
-}
-
-.main-container .child-container:hover img {
-  -webkit-filter: brightness(25%) blur(3px);
-          filter: brightness(25%) blur(3px);
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.main-container .child-container img {
-  height: 100%;
-  position: absolute;
-}
-
-.main-container .child-container .frame1-text {
-  position: absolute;
-  z-index: 20;
-  height: 100vh;
+.navbar .navbar-options {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid #ffffff6b;
+  font-size: 1.45vh;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff6b;
 }
 
-.main-container .child-container .frame1-text .text1 {
-  font-size: 6.2vh;
-  font-family: 'Montserrat';
-  color: white;
-  margin-bottom: 10vh;
-  margin-left: 10vh;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  margin-top: 78vh;
-  position: absolute;
-  width: 100%;
+.navbar .navbar-options a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff6b;
 }
 
-.main-container .child-container .frame1-text .text2 {
-  font-size: 4vh;
-  font-family: 'Montserrat';
-  color: white;
-  margin-bottom: 1vh;
-  margin-left: 13vh;
-  width: 100%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  position: absolute;
-  margin-top: 85vh;
-  -webkit-filter: opacity(1%);
-          filter: opacity(1%);
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+.navbar .navbar-options a:active {
+  color: #ffffff6b;
+}
+
+.navbar .navbar-options a:visited {
+  color: #ffffff6b;
+}
+
+.navbar .navbar-options .main-logo img {
+  height: 6.5vh;
+}
+
+.navbar .navbar-options .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
   cursor: pointer;
 }
 
-.main-container .child-container .frame1-text .text2 .subtittle {
-  font-size: 2vh;
+.navbar .navbar-options .socials .socials-logo img {
+  height: 2.1vh;
 }
 
-.main-container .child-container .frame1-text .text2 .subtittle2 {
-  margin-left: 1vh;
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .bg-img {
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+}
+
+.container .bg-img img {
+  width: 100vw;
+}
+
+.container .description {
+  position: absolute;
+  z-index: 90;
+  text-align: center;
+  padding-bottom: 8vh;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 7vh;
+  margin-left: 23vw;
+  margin-right: 23vw;
+  color: #ffffff;
+}
+
+.frame2 {
+  height: 20vh;
+  color: #ffffff;
+  font-size: 10vh;
 }
 /*# sourceMappingURL=styles.css.map */

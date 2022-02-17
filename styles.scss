@@ -1,85 +1,98 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300&display=swap');
+$navbar-colorText: #ffffff6b;
+$navbar-colorLogo: #ffffff;
+$navbar-fontText: 'Montserrat', sans-serif;
+$container-fontText: 'Alumni Sans', sans-serif;
+*{
     margin: 0 auto;
-    padding: 0;
-    background-color: black;
 }
 
-.main-container {
+body{
+    background-color: rgb(41, 41, 41);
+}
+
+.navbar {
+    position: fixed;
+    z-index: 110;
+    width: 101vw;
+    height: 9vh;
     display: flex;
+    background-color: transparent;
+    border-bottom: 1px solid $navbar-colorText;
 
-    .child-container{
-        flex: 30%;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
-        &:hover {
-            .frame1-text {
-
-                .text1 {
-                    transform: translateY(-10vh);
-                }
-                .text2 {
-                    filter: opacity(100%);
-                    transform: translateY(-10vh);
-
-                }
+    .navbar-options{
+        flex: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid $navbar-colorText;
+        font-size: 1.45vh;
+        font-family: $navbar-fontText;
+        color: $navbar-colorText;
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: $navbar-colorText;
+            &:active {
+                color: $navbar-colorText;
             }
-
-            img {
-                filter:  brightness(25%) blur(3px);
-                transform: scale(1.15);
-                transition: 1s;
+            &:visited {
+                color: $navbar-colorText;
             }
-        }
-
-        img {
-            height: 100%;
-            position: absolute;
 
         }
 
-        .frame1-text {
-            position: absolute;
-            z-index: 20;
-            height: 100vh;
+        .main-logo{
+            img{
+                height: 6.5vh;
+            }
+        }
+        .socials{
             display: flex;
-            flex-direction: column;
-            transition: 1s ease-in-out;
-            
-            .text1 {
-                font-size: 6.2vh;
-                font-family: 'Montserrat';
-                color: white;
-                margin-bottom: 10vh;
-                margin-left: 10vh;
-                transition: 0.5s ease-in-out;
-                margin-top: 78vh;
-                position: absolute;
-                width: 100%;
-
-            }
-            .text2{
-                font-size: 4vh;
-                font-family: 'Montserrat';
-                color: white;
-                margin-bottom: 1vh;
-                margin-left: 13vh;
-                width: 100%;
-                transition: 1s;
-                position:absolute;
-                margin-top: 85vh;
-                filter: opacity(1%);
-                transition: 1s ease-in-out;
-                cursor: pointer;
-                .subtittle {
-                    font-size: 2vh;
-                }
-                .subtittle2 {
-                    margin-left: 1vh;
+            justify-content: space-between;
+            column-gap: 1vw;
+            cursor: pointer;
+            .socials-logo {
+                img {
+                    height: 2.1vh;
                 }
             }
+        }
 
-            
+    }
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: flex-end;
+    .bg-img{
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+        img{
+            width: 100vw;
         }
     }
+    .description {
+        position: absolute;
+        z-index: 90;
+        text-align: center;
+        padding-bottom: 8vh;
+        font-family: $container-fontText;
+        font-size: 7vh;
+        margin-left: 23vw;
+        margin-right: 23vw;
+        color: $navbar-colorLogo;
+    }
+}
+
+.frame2{
+    height: 20vh;
+    color: $navbar-colorLogo;
+    font-size: 10vh;
 }
